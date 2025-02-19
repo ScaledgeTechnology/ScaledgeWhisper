@@ -1,5 +1,0 @@
-include README.md
-include requirements.txt
-include requirements.conversion.txt
-recursive-include EdgeWhisper/assets *.onnx
-recursive-include EdgeWhisper/tests/data *

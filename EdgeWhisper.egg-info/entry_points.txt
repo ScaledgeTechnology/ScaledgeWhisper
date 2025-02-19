@@ -1,0 +1,2 @@
+[console_scripts]
+edgewhisper = EdgeWhisper.cli:main

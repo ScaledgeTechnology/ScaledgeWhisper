@@ -1,0 +1,7 @@
+include README.md
+include requirements.txt
+include requirements-conversion.txt
+recursive-include EdgeWhisper/assets *.onnx
+recursive-include EdgeWhisper/tests/data *.mp3
+recursive-include EdgeWhisper/tests/data *.wav
+recursive-include EdgeWhisper/tests/data *.flac
