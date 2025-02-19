@@ -152,17 +152,17 @@ usage: edgewhisper   [-h] [--list_models] [--available_languages] [--model]
    edgewhisper /path/to/audio/file_1.wav /path/to/audio/file_2.wav --info
    ```
 
-## RealTIme Class
+## RealTime Class
 
-The core class for live transcription and translation is `RealTIme`. It handles both real-time transcription and translation, making use of the `keyboard` library to start and stop recording using hotkeys.
+The core class for live transcription and translation is `RealTime`. It handles both real-time transcription and translation, making use of the `keyboard` library to start and stop recording using hotkeys.
 
 ### Example Code:
 
 ```python
-from EdgeWhisper import RealTIme
+from EdgeWhisper import RealTime
 
-# Initialize RealTIme with edge model and auto device selection
-rstt = RealTIme(model_size_or_path="edge", device="auto")
+# Initialize RealTime with edge model and auto device selection
+rstt = RealTime(model_size_or_path="edge", device="auto")
 
 # Start live transcription
 rstt.transcribe(
