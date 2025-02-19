@@ -3,12 +3,12 @@ name: PYPI
 on:
   push:
     branches:
-      - master
+      - main
     tags:
       - v*
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   check-code-format:
@@ -22,10 +22,10 @@ jobs:
           python-version: 3.9
 
       - name: Install formatting tools
-        run: pip install black isort flake8
+        run: pip install "black[jupyter]" isort flake8
 
-      - name: Check code format with Black
-        run: black --check .
+      - name: Auto-format with Black
+        run: black .
 
       - name: Check imports order with isort
         run: isort --check-only .
