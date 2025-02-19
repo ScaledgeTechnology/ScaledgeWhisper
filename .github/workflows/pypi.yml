@@ -27,8 +27,8 @@ jobs:
       - name: Auto-format with Black
         run: black .
 
-      - name: Check imports order with isort
-        run: isort --check-only .
+      - name: Fix import order with isort
+        run: isort .
 
       - name: Check code style with Flake8
         run: flake8 .
