@@ -1,6 +1,6 @@
-# EdgeWhisper - Live Transcription & Translation for Edge Devices
+# ScaledgeWhisper - Live Transcription & Translation for Edge Devices
 
-**EdgeWhisper** is a Python package designed to provide live transcription and translation capabilities using Whisper models, optimized for edge devices like Raspberry Pi. Built on top of Faster Whisper, this package allows users to transcribe or translate audio in real-time, with support for multiple languages and customizable settings.
+**ScaledgeWhisper** is a Python package designed to provide live transcription and translation capabilities using Whisper models, optimized for edge devices like Raspberry Pi. Built on top of Faster Whisper, this package allows users to transcribe or translate audio in real-time, with support for multiple languages and customizable settings.
 
 For more details on the Faster Whisper implementation and setup, please refer to the [Faster Whisper README.md](https://github.com/SYSTRAN/faster-whisper/blob/master/README.md).
 
@@ -23,20 +23,20 @@ For more details on the Faster Whisper implementation and setup, please refer to
 You can install the package via pip:
 
 ```bash
-pip install EdgeWhisper
+pip install ScaledgeWhisper
 ```
 
 Alternatively, you can install it from source:
 
 ```bash
-git clone https://github.com/<username>/EdgeWhisper.git
-cd EdgeWhisper
+git clone https://github.com/<username>/ScaledgeWhisper.git
+cd ScaledgeWhisper
 pip install -e .
 ```
 
 ## Usage
 
-You can use EdgeWhisper via the command line interface (CLI). Here’s a breakdown of how to use it.
+You can use ScaledgeWhisper via the command line interface (CLI). Here’s a breakdown of how to use it.
 
 ### Command-line Options
 
@@ -159,7 +159,7 @@ The core class for live transcription and translation is `RealTime`. It handles 
 ### Example Code:
 
 ```python
-from EdgeWhisper import RealTime
+from ScaledgeWhisper import RealTime
 
 # Initialize RealTime with edge model and auto device selection
 rstt = RealTime(model_size_or_path="edge", device="auto")
@@ -181,7 +181,7 @@ rstt.transcribe(
 
 ### Running Tests
 
-EdgeWhisper comes with a suite of unit tests to verify its functionality. You can run the tests using `pytest`:
+ScaledgeWhisper comes with a suite of unit tests to verify its functionality. You can run the tests using `pytest`:
 
 ```bash
 pytest tests/
