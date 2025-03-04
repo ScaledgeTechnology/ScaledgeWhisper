@@ -10,7 +10,7 @@ def get_long_description():
 
 
 def get_project_version():
-    version_path = os.path.join(base_dir, "EdgeWhisper", "version.py")
+    version_path = os.path.join(base_dir, "ScaledgeWhisper", "version.py")
     version = {}
     with open(version_path, encoding="utf-8") as fp:
         exec(fp.read(), version)
@@ -28,7 +28,7 @@ conversion_requires = get_requirements(
 )
 
 setup(
-    name="EdgeWhisper",
+    name="ScaledgeWhisper",
     version=get_project_version(),
     license="MIT",
     description="Faster Whisper transcription with CTranslate2 with Live Capabilities for Edge Devices",
@@ -38,7 +38,7 @@ setup(
     author_email="Scaledge.ml@gmail.com",
     entry_points={
         'console_scripts': [
-            'edgewhisper = EdgeWhisper.cli:main',  
+            'Scaledgewhisper = ScaledgeWhisper.cli:main',  
         ],
     },         
     classifiers=[
@@ -67,7 +67,7 @@ setup(
     },
     packages=find_packages(),
     package_data={
-        "EdgeWhisper": ["assets/*.onnx", "test/data/*.mp3", "test/data/*.wav", "test/data/*.flac"]
+        "ScaledgeWhisper": ["assets/*.onnx", "test/data/*.mp3", "test/data/*.wav", "test/data/*.flac"]
     },
     include_package_data=True,
 )

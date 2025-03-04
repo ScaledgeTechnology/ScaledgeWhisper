@@ -1,7 +1,7 @@
 include README.md
 include requirements.txt
 include requirements-conversion.txt
-recursive-include EdgeWhisper/assets *.onnx
-recursive-include EdgeWhisper/tests/data *.mp3
-recursive-include EdgeWhisper/tests/data *.wav
-recursive-include EdgeWhisper/tests/data *.flac
+recursive-include ScaledgeWhisper/assets *.onnx
+recursive-include ScaledgeWhisper/tests/data *.mp3
+recursive-include ScaledgeWhisper/tests/data *.wav
+recursive-include ScaledgeWhisper/tests/data *.flac
