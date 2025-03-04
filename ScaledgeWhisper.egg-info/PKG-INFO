@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: ScaledgeWhisper
-Version: 1.1.1
+Version: 1.1.2
 Summary: Faster Whisper transcription with CTranslate2 with Live Capabilities for Edge Devices
 Author: ScaledgeTechnology
 Author-email: Scaledge.ml@gmail.com
