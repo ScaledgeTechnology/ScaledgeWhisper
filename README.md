@@ -29,7 +29,7 @@ pip install ScaledgeWhisper
 Alternatively, you can install it from source:
 
 ```bash
-git clone https://github.com/<username>/ScaledgeWhisper.git
+git clone https://github.com/ScaledgeTechnology/ScaledgeWhisper.git
 cd ScaledgeWhisper
 pip install -e .
 ```
@@ -41,7 +41,7 @@ You can use ScaledgeWhisper via the command line interface (CLI). Here’s a bre
 ### Command-line Options
 
 ```bash
-usage: edgewhisper   [-h] [--list_models] [--available_languages] [--model]
+usage: scaledgewhisper   [-h] [--list_models] [--available_languages] [--model]
                   [--live] [--live_language] [--language] [--info]
                   [--save_recording] [--save_transcription]
                   [--save_location] [--recording_name]
@@ -77,7 +77,7 @@ usage: edgewhisper   [-h] [--list_models] [--available_languages] [--model]
    To transcribe audio from the microphone in real-time:
 
    ```bash
-   edgewhisper transcribe --live --model edge --live_language english
+   scaledgewhisper transcribe --live --model edge --live_language english
    ```
 
 2. **Live Translation:**
@@ -85,7 +85,7 @@ usage: edgewhisper   [-h] [--list_models] [--available_languages] [--model]
    To translate audio from any language to English in real-time:
 
    ```bash
-   edgewhisper translate --live --model edge --live_language english
+   scaledgewhisper translate --live --model edge --live_language english
    ```
 
 3. **Non-Live Transcription:**
@@ -93,7 +93,7 @@ usage: edgewhisper   [-h] [--list_models] [--available_languages] [--model]
    For transcribing a pre-recorded audio file:
 
    ```bash
-   edgewhisper transcribe /path/to/audio/file_1.wav /path/to/audio/file_2.wav --model default --language en
+   scaledgewhisper transcribe /path/to/audio/file_1.wav /path/to/audio/file_2.wav --model default --language en
    ```
 
 4. **Non-Live Translation:**
@@ -101,7 +101,7 @@ usage: edgewhisper   [-h] [--list_models] [--available_languages] [--model]
    To translate a pre-recorded audio file into English:
 
    ```bash
-   edgewhisper transcribe /path/to/audio/file_1.wav /path/to/audio/file_2.wav --model edge --language multi
+   scaledgewhisper transcribe /path/to/audio/file_1.wav /path/to/audio/file_2.wav --model edge --language multi
    ```
 
 5. **Listing Available Models:**
@@ -109,7 +109,7 @@ usage: edgewhisper   [-h] [--list_models] [--available_languages] [--model]
    To list all available Whisper models:
 
    ```bash
-   edgewhisper --list_models
+   scaledgewhisper --list_models
    ```
 
 6. **Listing Available Languages:**
@@ -117,7 +117,7 @@ usage: edgewhisper   [-h] [--list_models] [--available_languages] [--model]
    To list all available languages for live and non-live tasks:
 
    ```bash
-   edgewhisper --available_languages
+   scaledgewhisper --available_languages
    ```
 
 7. **Saving Recording:**
@@ -125,7 +125,7 @@ usage: edgewhisper   [-h] [--list_models] [--available_languages] [--model]
    To save the final recording for live tasks:
 
    ```bash
-   edgewhisper transcribe --live --save_recording --recording_name /path/for/your/recording.wav
+   scaledgewhisper transcribe --live --save_recording --recording_name /path/for/your/recording.wav
    ```
 
 8. **Saving Transcription:**
@@ -133,7 +133,7 @@ usage: edgewhisper   [-h] [--list_models] [--available_languages] [--model]
    To save the final recording for live tasks, path will be cwd and transcripton.json by default:
 
    ```bash
-   edgewhisper transcribe --live --save_transcription /cwd/your/transcription.json
+   scaledgewhisper transcribe --live --save_transcription /cwd/your/transcription.json
    ```
 
 9. **Getting Full Prediction:**
@@ -141,16 +141,16 @@ usage: edgewhisper   [-h] [--list_models] [--available_languages] [--model]
    To get full prediction on your recorded audio:
 
    ```bash
-   edgewhisper transcribe --live --full_prediction
+   scaledgewhisper transcribe --live --full_prediction
    ```
 
 10. **Getting info on audio files:**
 
-   To get information on audio files such as language, language probability etc:
-   
-   ```bash
-   edgewhisper /path/to/audio/file_1.wav /path/to/audio/file_2.wav --info
-   ```
+     To get information on audio files such as language, language probability etc:
+     
+     ```bash
+     scaledgewhisper /path/to/audio/file_1.wav /path/to/audio/file_2.wav --info
+     ```
 
 ## RealTime Class
 
