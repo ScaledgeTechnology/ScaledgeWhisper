@@ -35,7 +35,7 @@ class RealTime:
             **model_kwargs
         
         Help:
-            <class>.language_codes: will display the dict of all the languages
+            <class>.available_languages: will display the dict of all the languages
         
         '''
         self.start_key = start_key
