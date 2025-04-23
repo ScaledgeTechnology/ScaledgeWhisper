@@ -1,3 +1,5 @@
+[![PyPI version](https://badge.fury.io/py/scaledgewhisper.svg)](https://pypi.org/project/scaledgewhisper/)
+
 # ScaledgeWhisper - Live Transcription & Translation for Edge Devices
 
 **ScaledgeWhisper** is a Python package designed to provide live transcription and translation capabilities using Whisper models, optimized for edge devices like Raspberry Pi. Built on top of Faster Whisper, this package allows users to transcribe or translate audio in real-time, with support for multiple languages and customizable settings.
